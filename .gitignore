@@ -137,6 +137,7 @@ target/
 *.iml
 *.ipr
 application.properties
+gitignore
 
 ### Eclipse ###
 .apt_generated
