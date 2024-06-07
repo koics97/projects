@@ -9,7 +9,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class FormService {
+public class WebService {
 
     private final AppliedRidersRepository appliedRidersRepository;
 

@@ -1,7 +1,7 @@
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
     <head>
         <title>GO-KART Racing</title>
-        <link rel="stylesheet" type="text/css" href="sztajl.css"/>
+        <link rel="stylesheet" type="text/css" th:href="@{/sztajl.css}"/>
     </head>
     <body>
         <div class="head">
@@ -10,13 +10,13 @@
         <div class="menu">
             <table>
                 <td>
-                    <a href="index.html">Main site</a>
+                    <a href="index">Main site</a>
                 </td>
                 <td>
                     <a href="#">About go-kart</a>
                 </td>
                 <td>
-                    <a href="form.html">Apply for a ride</a>
+                    <a href="form">Apply for a ride</a>
                 </td>
                 <td>
                     <a href="https://avalonpark.hu/elmenyek/hell-kart-event-center">Hell Kart & Event Center</a>
