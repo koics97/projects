@@ -1,0 +1,51 @@
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>GO-KART Racing</title>
+        <link rel="stylesheet" type="text/css" th:href="@{/sztajl.css}"/>
+        <script th:src="@{/jquery-3.6.0.min.js}"></script>
+        <script th:src="@{/dzsavaszkript.js}"></script>
+        <style>
+            a#terms:hover{
+                color:darkgray;
+           }
+           #kart{
+               width: 600px;
+               height: 400px;
+           }
+        </style>
+    </head>
+    <body>
+        <div class="head">
+            <h1>GO-KART</h1>
+        </div>
+        <div class="menu">
+            <table>                
+                <td> 
+                    <a href="#">Main site</a>
+                </td>           
+            
+                <td>
+                    <a href="kart">About go-kart</a>
+                </td>
+            
+                <td>
+                    <a href="form">Apply for a ride</a>
+                </td>
+                <td>
+                    <a href="https://avalonpark.hu/elmenyek/hell-kart-event-center">Hell Kart & Event Center</a>
+                </td>
+            </table>       
+            
+        </div>
+        <div class="welcome">
+            <h1 id="mainwelcome">
+                Welcome to GO-kart Racing!
+            </h1>
+            <h2>The Official Website</h2>
+        </div>
+        <div id="hell">            
+            <img th:src="@{/hell.png}" title="Hell logo" id="hell_logo"/>
+            <figcaption id="poweredby">Powered by Hell</figcaption>
+        </div>
+    </body>
+</html>

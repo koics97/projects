@@ -1,0 +1,93 @@
+body{
+    background-color: lightgoldenrodyellow
+}
+
+a{
+    color:black;
+    text-decoration: underline;
+}
+.head{
+    text-align: center;
+    text-decoration: underline #FF0000;
+    color: #00FF00;
+    background-image:url("gokart2.jpg");
+    background-size: cover;
+    padding: 40px;
+}
+
+.menu{
+    padding: 20px;
+    background-color: darkcyan;
+}
+
+td{
+    background-color: yellow;
+    border: thick outset gray;
+}
+
+td:active{
+    border: thick inset gray;
+}
+
+td:hover{
+    background-color:limegreen;
+}
+
+#mainwelcome{
+    font-style: bold;
+    text-align: center; 
+}
+
+div#toright{
+    float: right;
+}
+div#toleft{
+    float: left;
+}
+
+h1.cim{
+    text-align: center;
+    text-decoration: underline;
+}
+
+div.text{
+    text-align: justify;
+    font-size: 14pt;
+}
+
+a.textlink:link{
+    color:aqua;
+    text-decoration: none;
+    
+}
+
+a.textlink:hover{
+    color:darkgoldenrod;
+    text-decoration: underline;
+}
+
+a.textlink:active{
+    color: whitesmoke;
+    background-color: tomato;
+    text-decoration: underline;
+}
+
+a.textlink:visited{
+    color:green;
+    text-decoration: underline;
+}
+
+marquee{
+    direction:ltr;    
+}
+
+#poweredby{
+    text-align: center;
+}
+#hell_logo{
+  position: relative;
+  left: -100%;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}

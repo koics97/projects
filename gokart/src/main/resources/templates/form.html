@@ -1,0 +1,91 @@
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>GO-KART Racing</title>
+        <link rel="stylesheet" type="text/css" th:href="@{/sztajl.css}"/>
+        <script th:src="@{/jquery-3.6.0.min.js}"></script>
+        <script th:src="@{/dzsavaszkript.js}"></script>
+        <style>
+            a#terms:hover{
+                color:darkgray;     
+           } 
+           #kart{
+               width: 600px;
+               height: 400px;
+           }          
+        </style>
+       
+    </head>
+    <body>
+        <div class="head">
+            <h1>GO-KART</h1>
+        </div>
+        <div class="menu">
+            <table>                
+                <td> 
+                    <a href="index">Main site</a>
+                </td>           
+            
+                <td>
+                    <a href="kart">About go-kart</a>
+                </td>
+            
+                <td>
+                    <a href="#">Apply for a ride</a>
+                </td>
+                <td>
+                    <a href="https://avalonpark.hu/elmenyek/hell-kart-event-center">Hell Kart & Event Center</a>
+                </td>
+            </table>      
+        </div>
+        <span>
+            <div id="toleft">
+                <form name="applyform">
+                    <div>
+                        <label for="fname">First Name:</label>
+                        <input type="text" name="fname" id="fname">
+                    </div>
+                    <div>
+                        <label for="lname">Last Name:</label>
+                        <input type="text" name="lname" id="lname">
+                    </div>
+                    <div>
+                        <label for="pscode">Postal Code:</label>
+                        <input type="text" name="pscode" id="pscode">
+                    </div>
+                    <div>
+                        <label for="city">City:</label>
+                        <input type="text" name="city" id="city">
+                    </div>
+                    <div>
+                        <label for="address">Address:</label>
+                        <input type="text" name="address" id="address">
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label for="tands">I accept the <a th:href="@{/termsofservice.txt}" id="terms">terms and services</a><br>of the site!</label>
+                        <input type="checkbox" name="tands" id="tands" required>
+                    </div>
+                    <div>
+                        <label for="promo"><span>(optional)</span>I want to get promotional emails about<br>deals and news.</label>
+                        <input type="checkbox" name="promo" id="promo">
+                    </div>
+                    <input type="submit" id="submit" value="submit" th:onclick="katt()">
+
+                </form>
+            </div>
+            <div id="toright">
+                <p>
+                    <h1 id="fill" style="color: red;">Fill out the form to get a chance for a ride in a go-kart!</h1>
+                </p>
+                <input type="button" id="hidebt" value="Hide">
+            </div>
+        </span>
+        <marquee scrollmount="20">
+            <img th:src="@{/kart2.png}" id="kart" title="kart"/>
+        </marquee>
+       </body>
+    </body>
+</html>
